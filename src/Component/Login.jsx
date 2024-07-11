@@ -4,7 +4,7 @@ import { AuthContext } from "./AuthProvider";
 
 const Login = () => {
 
-    const {singIn }=useContext(AuthContext);
+    const {singIn}=useContext(AuthContext);
     const navigate =useNavigate();
 
     const handleLogin = e => {
@@ -26,16 +26,6 @@ const Login = () => {
 
 
     }
-
-    // const handleGoogleLogin = () => {
-    //     singInWithGoogle() 
-    //     .then(result =>{
-    //         console.log(result.user);
-    //       })
-    //       .catch(error =>{
-    //         console.error(error)
-    //       })
-    // }
     return (
         <div className="hero bg-base-200 min-h-screen">
   <div className="hero-content flex-col lg:flex-row-reverse">
@@ -70,8 +60,6 @@ const Login = () => {
       <p className="ml-2"> New Here?Please  
         <button className="btn btn-link mr-2"><Link to="/register"> Register</Link></button>
       </p>
-      {/* <p><button onClick={handleGoogleLogin} className='btn btn-success'>Google</button></p> */}
-
     </div>
   </div>
 </div>
